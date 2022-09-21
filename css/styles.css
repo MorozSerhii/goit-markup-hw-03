@@ -168,8 +168,10 @@ margin-left: 50px;
 
 .hero-section {
   margin: 0 auto;
-  width: 100%;
-  background-color: var(--background-hero-color);
+  width: 1600px;
+  height: 600px;
+  background-image: url(../images/backgroudn.jpg);
+  /* background-color: var(--background-hero-color); */
   background-repeat: no-repeat;
   background-size:cover;
   text-align: center;
@@ -333,7 +335,7 @@ margin-left: 50px;
   padding-bottom: 60px;
   background-color: #2f303a;
   margin: 0 auto;
-  width: 100%;
+  max-width: 1600px;
 }
 
 .logo-footer{
