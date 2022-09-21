@@ -56,12 +56,11 @@ body {
 .links {
   text-decoration: none;
 }
-
-.links:visited {
+.links:visited, .links:active{
   color: var(--primery-text-color);
-
-
 }
+
+
 
 .container {
   width: 1200px;
