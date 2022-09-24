@@ -366,6 +366,9 @@ margin: 0 auto;
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.adress-item > .contacts-links{
+  padding: 0;
+}
 
 /* --------------------портфоліо-------------------- */
 .section {
