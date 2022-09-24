@@ -27,12 +27,19 @@ ol {
 
 button {
   cursor: pointer;
+  display: block;
+  border: none;
+  border-radius: 4px;
 }
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
-
+address{
+  font-style: normal;
+}
 p {
   margin: 0;
 }
@@ -75,8 +82,8 @@ body {
 }
 /* -----------------Logo---------------*/
 .logo {
-  margin-top: 24px;
-  margin-bottom: 24px;
+  padding-top:  24px;
+  padding-bottom: 25px;
   display: inline-block;
   color: var(--primery-text-color);
   font-family: 'Raleway', sans-serif;
@@ -111,11 +118,14 @@ body {
   display: flex;
   align-items: center;
   margin-left: 93px;
-  
-  font-weight: 500;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
 }
+  
+.item-nav{
+  font-weight: 500;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+  }
+
 
 .nav-links:not(:last-child) {
   margin-right: 50px;
@@ -123,7 +133,7 @@ body {
 
 .nav-links>a {
   display: block;
-  padding: 16px 0;
+  padding: 32px 0;
 
 }
 
@@ -145,14 +155,16 @@ body {
   display: flex;
   align-items: center;
   margin-left: auto;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+ 
 }
 
 .contacts-links {
   color: var(--second-text-color);
-  text-decoration: none;
+  padding: 31px 0;
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 
 }
 .contacts_section>li:last-child {
@@ -165,12 +177,10 @@ body {
 
 /* --------------Герой------------ */
 .hero-section {
-  
-  /* background-image: url(../images/backgroudn.jpg); */
   background-color:var(--background-hero-color);
-  background-size:cover;
   text-align: center;
-
+  padding: 200px 0;
+ 
 }
 
 .hero-title {
@@ -191,15 +201,16 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.container>.button{
+margin: 0 auto;
+}
 .button {
-  padding: 9px 31px;
+
+  padding: 10px 32px;
   color: var(--wighte-text-color);
   background-color: var(--accent-text-color);
-  border: 1px solid;
-  border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  border-color: transparent;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -219,11 +230,8 @@ body {
 .our-advantages .item:last-child{
   margin-right: 0;
 }
-.advantages-section{
-  padding-top:94px;
-  padding-bottom:118px; 
-  
-}
+
+
 .advantages-list {
   margin-bottom: 10px;
   font-size: 14px;
@@ -263,10 +271,6 @@ body {
 
 /* --------------наша команда------------ */
 .section-team {
-  margin: 0 auto;
-  width:100%;
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: var(--background-color-second);
  
 }
@@ -277,13 +281,14 @@ body {
 .people-card {
   width: 270px;
   background-color: var(--background-color-main);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
  
 }
 .people-card:nth-child(-n + 3){
   margin-right: 30px;
+  
 }
 .team-list {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -297,9 +302,8 @@ body {
 }
 .card-text{
   text-align: center;
-  padding-bottom: 30px;
+  padding: 30px 0;
   
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* ----------------footer ------------------*/
@@ -335,9 +339,15 @@ body {
   margin: 0 auto;
 }
 
-.logo-footer.logo{
-  color: var(--wighte-text-color);
-  margin-bottom: 20px;
+.logo-footer{
+     margin-bottom: 20px;
+    display: inline-block;
+    color: var(--primery-text-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+
 
 }
 .adress-item:nth-child(-n+2){
@@ -370,30 +380,22 @@ body {
 .filter-nav{
   display:flex;
   justify-content: center;
-  margin-bottom:34px;
+  margin-bottom: 50px;
   
 }
 .filter-item:nth-child(-n+4){
   margin-right: 8px;
 }
 .filter-button {
-  display: block;
   padding: 6px 22px 6px 22px;
-
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   cursor: pointer;
   color: var(--primery-text-color);
-
-  border-radius: 4px;
-  border-color: transparent;
   background-color: var(--background-color-second);
 }
-.filter-button:first-child{
-  padding-left: 25px;
-  padding-right: 25px;
-}
+
 .filter-button:hover,
 .filter-button:focus {
   background-color: var(--button-activ-color);
@@ -430,4 +432,5 @@ body {
 .text-box{
 padding: 20px 24px;
 border: 1px solid #EEEEEE;
+border-top: none;
 }
